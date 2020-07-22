@@ -1,8 +1,10 @@
+require('dotenv').config()
 const express = require('express')
 const app = express()
-require('dotenv').config()
+const routes = require('./src/routes/index')
 const { port } = require('./src/helper/service')
 
+app.use('/api/home', routes.Home)
 
 app.listen(port, (err) => {
     if (err) {
