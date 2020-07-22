@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/tadamiura/checkpoint4-portfolio-back#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "dotenv": "^8.2.0"
   }
 }

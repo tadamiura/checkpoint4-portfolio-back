@@ -1,6 +1,8 @@
 const express = require('express')
 const app = express()
 require('dotenv').config()
+const { port } = require('./src/helper/service')
+
 
 app.listen(port, (err) => {
     if (err) {
