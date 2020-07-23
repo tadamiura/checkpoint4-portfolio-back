@@ -18,7 +18,7 @@ router.get('/', (req, res) => {
 
 //Get informations about project to display in to My work 
 router.get('/mywork', (req, res) => {
-    const sql = `SELECT project_title, duration, language FROM stack_project
+    const sql = `SELECT project_title, duration, language, url_name FROM stack_project
     JOIN stack ON stack.id = stack_project.id_stack
     JOIN project ON project.id = stack_project.id_project`
 
