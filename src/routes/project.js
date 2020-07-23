@@ -56,27 +56,4 @@ router.get('/presentation', (req, res) => {
     })
 })
 
-// GET informations for each project to display Project page
-// router.get('/presentation/:url', (req, res) => {
-//     const projectUrl = req.params.url
-//     const sql = `SELECT DISTINCT project.id, project_title, project_description, date_creation, url_image, github_link, app_link  
-//     FROM project
-//     JOIN gallery_project
-//     ON project.id = id_project
-//     JOIN gallery
-//     ON gallery.id = id_gallery
-//     WHERE url_name = ?`
-
-
-//     connection.query(sql, [projectUrl], (err, result) => {
-//         if (err) {
-//             console.log(err)
-//             return res.status(500).send('Erreur dans la récupération des projects pour la page presentation de project')
-//         } 
-//         else {
-//             return res.json(result[0])
-//         }
-//     })
-// })
-
 module.exports = router
