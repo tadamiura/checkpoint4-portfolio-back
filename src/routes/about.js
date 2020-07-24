@@ -40,4 +40,20 @@ router.get('/presentation', (req, res) => {
 })
 
 
+// Update information about me
+
+router.put('/:id', (req, res) => {
+    const idAboutMe = req.params.id
+    const formData = req.body
+    const sql = 'UPDATE about_me SET ? WHERE id= ?'
+    connection.query(sql, [formData, idAboutMe], (err) => {
+        if (err) {
+            console.log(err)
+            res.status(500).send("Erreur lors de la modification de about me")
+        } else {
+            res.sendStatus(200)
+        }
+    })
+})
+
 module.exports = router
