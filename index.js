@@ -7,13 +7,20 @@ const { port } = require('./src/helper/service')
 
 app.use(cors())
 
+app.use(express.json())
+app.use(
+  express.urlencoded({
+    extended: true
+  })
+)
+
 app.use('/api/about', routes.About)
 app.use('/api/project', routes.Project)
 
 
 app.listen(port, (err) => {
-    if (err) {
-      throw new Error('Something bad just happened...')
-    }
-    console.log(`Server is listening on ${port}`)
-  })
+  if (err) {
+    throw new Error('Something bad just happened...')
+  }
+  console.log(`Server is listening on ${port}`)
+})
