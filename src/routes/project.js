@@ -36,7 +36,7 @@ router.get('/mywork', (req, res) => {
 
 // GET informations for each project to display Project page
 router.get('/presentation', (req, res) => {
-    const sql = `SELECT DISTINCT project.id, project_title, duration, stack.language, project_description, date_creation, url_image, github_link, app_link  
+    const sql = `SELECT project.id, project_title, duration, stack.language, project_description, DATE_FORMAT(date_creation,'%d/%m/%y') AS date, url_image, github_link, app_link  
     FROM project
     JOIN gallery_project
     ON project.id = id_project
