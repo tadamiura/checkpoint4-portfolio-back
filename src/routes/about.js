@@ -48,7 +48,7 @@ router.put('/:id', (req, res) => {
     const sql = 'UPDATE about_me SET ? WHERE id= ?'
     connection.query(sql, [formData, idAboutMe], (err) => {
         if (err) {
-            console.log(err)
+            console.log(req.body, err)
             res.status(500).send("Erreur lors de la modification de about me")
         } else {
             res.sendStatus(200)
