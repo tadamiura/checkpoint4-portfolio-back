@@ -17,7 +17,7 @@ router.get('/', (req, res) => {
 
 //Get informations for home page
 router.get('/home', (req, res) => {
-    const sql = 'SELECT firstname, lastname, description FROM about_me'
+    const sql = 'SELECT id, firstname, lastname, description FROM about_me'
     connection.query(sql, (err, result) => {
         if (err) {
             res.status(500).send('Erreur dans la récupération des information about me pour la home page')
@@ -29,7 +29,7 @@ router.get('/home', (req, res) => {
 
 //Get informations for about page
 router.get('/presentation', (req, res) => {
-    const sql = 'SELECT about, email, github_profil, linkedin_profil FROM about_me'
+    const sql = 'SELECT id, about, email, github_profil, linkedin_profil FROM about_me'
     connection.query(sql, (err, result) => {
         if (err) {
             res.status(500).send('Erreur dans la récupération des information about me pour la présentation')
