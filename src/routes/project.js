@@ -26,7 +26,6 @@ router.get('/mywork', (req, res) => {
 
     connection.query(sql, (err, result) => {
         if (err) {
-            console.log(err)
             res.status(500).send('Erreur dans la récupération des projects pour la page mywork')
         } else {
             res.send(result)
@@ -49,7 +48,6 @@ router.get('/presentation', (req, res) => {
 
     connection.query(sql, (err, result) => {
         if (err) {
-            console.log(err)
             res.status(500).send('Erreur dans la récupération des projects pour la page presentation de project')
         } else {
             res.send(result)
@@ -84,6 +82,8 @@ router.get('/presentation', (req, res) => {
 //     }
 //   })
 
+
+//Working to post a new project request
 router.post('/new-project', (req, res) => {
     console.log("params",req.params,"body", req.body)
     const formData = req.body
