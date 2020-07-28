@@ -41,7 +41,7 @@ CREATE TABLE `about_me` (
 
 LOCK TABLES `about_me` WRITE;
 /*!40000 ALTER TABLE `about_me` DISABLE KEYS */;
-INSERT INTO `about_me` VALUES (1,'Tadatoshi','Miura','Développeur web Fullstack JavaScript/ React/ Node.js','Chef de projet sport en entreprise et préparateur physique, je poursuis mon parcours en tant que développeur web dans le cadre d\'une reconversion professionnelle. \n\nL\'une de mes réussites a été la conception d\'un espace sportif et la mise en place d\'activités dans le cadre d\'un projet QVT pour l\'un des plus grands employeurs d’Île-de-France. En équipe, nous avons proposé pour la première fois une digitalisation de l\'expérience pour les collaborateurs de cette entreprise : adhésion et réservation en ligne pour la pratique sportive, utilisation d\'une application de partage d\'informations.\n\nMa compréhension de la demande client et ma capacité à échanger en équipe pour délivrer le meilleur résultat vont être complétées par de solides bases techniques et une méthodologie d\'apprentissage caractéristiques d\'un développeur web. \n','tadamiura@gmail.com','https://github.com/tadamiura','https://www.linkedin.com/in/tadatoshimiura/');
+INSERT INTO `about_me` VALUES (1,'Tadatoshi','Miura','Développeur web Fullstack JavaScript/ React/ Node.js/ MySql','Chef de projet sport en entreprise et préparateur physique, j\'ai poursuivi mon parcours en tant que développeur web dans le cadre d\'une reconversion professionnelle. Pendant de 5 mois à la Wild Code School de Paris avec une spécialisation en JavaScript, React et Node.js, j\'ai réalisé plusieurs projets en groupe. En équipe avec une méthode agile de type SCRUM, j\'ai acquis les connaissances et les méthodologies pour m\'intégrer rapidement dans le domaine du développement web. Ainsi, je termine cette formation par un stage de 4 mois avec la conviction que les outils apportés durant la formation sont solides pour apprendre désormais PHP et Vue.JS. ','tada.miura@lilo.org','https://github.com/tadamiura','https://www.linkedin.com/in/tadatoshimiura/');
 /*!40000 ALTER TABLE `about_me` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -187,4 +187,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2020-07-24 15:55:53
+-- Dump completed on 2020-07-28 11:27:37
